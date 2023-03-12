@@ -1,0 +1,186 @@
+/* ======================= BASE STYLES =======================*/
+:root{
+    --color-neutral-10: #161b22;
+    --color-neutral-20: #212121;
+    --color-neutral-30: #30363d;
+    --color-neutral-40: #8b949e;
+    --color-neutral-50: #f2f3f5;
+    --color-neutral-60: #fff;
+    --color-link: #58a6ff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    align-items: center;
+    background-color: var(--color-neutral-20);
+    color: var(--color-neutral-50);
+    display: flex;
+    flex-direction: column;
+}
+
+/* ======================= HEADER =======================*/
+.header{
+   padding: 24px 0px;
+}
+
+.icon{
+    color: var(--color-neutral-60);
+    font-size: 50px;
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title{
+    font-size: clamp(20px, 24px, 50px);
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* ======================= FORM =======================*/
+form{
+    background-color: var(--color-neutral-20);
+    border: 1px solid var(--color-neutral-30);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field label{
+    font-weight: 400px;
+}
+
+.form-control{
+    all: unset;
+    background-color: var(--color-neutral-10);
+    border: 1px solid var(--color-neutral-30);
+    border-radius: 6px;
+    color: var(--color-neutral-50);
+    padding: 5px 12px;
+    line-height: 20px;
+}
+
+.form-control:focus-visible{
+    border-color: var(--color-link);
+}
+
+.form-control:-webkit-autofill{
+    box-shadow: inset 0 0 0 32px var(--color-neutral-10) !important;
+    -webkit-text-fill-color: var(--color-neutral-50);
+}
+
+#submit-button{
+    background-color: #238636;
+    border: 1px solid rgba(240, 246, 252, 0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--color-neutral-60);
+    display: inline-block;
+    font-weight: 500;
+    padding: 5px 16px;
+    line-height: 20px;
+    transition: background-color 80ms;
+}
+
+#submit-button:hover{
+    background-color: #2ea043;
+}
+
+
+/* ======================= FOOTER =======================*/
+footer{
+    padding: 80px;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-link);
+    font-size: clamp(15px, 12px, 17px);
+    list-style: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.contact-git{
+    color: var(--color-neutral-50);
+}
+
+.contact-git:hover{
+    cursor: pointer;
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+
+/* ======================= USER INFO =======================*/
+.user-img{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.user-name{
+    font-size: clamp(18px, 15px, 17px);
+    margin-top: 5px;
+}
+.user-data{
+    font-size: clamp(14px, 15px, 15px);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/* ======================= RESPONSIVE =======================*/
+@media screen and (max-width: 900px){
+
+    .header{
+        margin-left: 8%;
+    }
+
+    .title{
+        margin-left: 8%;
+    }
+
+    form{
+        margin-left: 8%;
+    }
+
+    .user-img{
+        width: 50%;
+    }
+
+   footer{
+    margin-left: 5%;
+   }
+
+   .contact{
+    width: 120px;
+   }
+}

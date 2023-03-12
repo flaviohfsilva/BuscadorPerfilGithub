@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==================== CSS ======================== -->
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="img/github.png">
+
+    <!-- ==================== FONTAWESOME ======================== -->
+    <script src="https://kit.fontawesome.com/b4d856d404.js" crossorigin="anonymous"></script>
+
+    <!-- ==================== FONTS ======================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <title>Buscador de Perfil</title>
+</head>
+<body>
+    <main id="container">  
+
+        <!-- ======================= HEADER ======================= -->
+        <div class="header">
+            <h2 class="icon"><i class="fa-brands fa-github"></i></h2>
+        </div>
+        
+        <h1 class="title"> Search your profile</h1>
+
+        <!-- ======================= FORM ======================= -->
+        <form class="form">
+            <div class="input-field">
+                <label for="user">
+                    Username
+                </label>
+                <input type="text" name="user" id="user" class="form-control" required>
+            </div>
+            <button type="submit" class="btn-sub" id="submit-button">Search</button>
+        </form>
+    </main>
+    <!-- ======================= FOOTER ======================= -->
+    <footer>
+        <ul>
+            <li>
+                <a href="https://docs.github.com/pt/site-policy/github-terms/github-terms-of-service">
+                    Terms</a>
+            </li>
+
+            <li>
+                <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-privacy-statement">
+                    Privacy</a>
+            </li>
+
+            <li>
+                <a href="https://docs.github.com/pt/site-policy/privacy-policies/github-privacy-statement">
+                    Security</a>
+            </li>
+
+            <li class="contact">
+                <a class="contact-git" href="https://support.github.com/?tags=dotcom-direct">
+                    Contact GitHub</a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- ======================= USER INFO ======================= -->
+
+    <img src="#" alt="" class="user-img">
+
+    <h1 class="user-name"></h1>
+
+    <div class="user-data">
+        <span class="user-bio"></span>
+    </div>
+
+    <h4 class="user-location"></h4>
+
+    <p class="user-followers"></p>
+
+    <p class="user-follow"></p>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>
