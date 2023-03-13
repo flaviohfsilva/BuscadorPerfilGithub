@@ -21,7 +21,7 @@ const loadData = (username) =>{
 
     
     xhr.onreadystatechange = () => {
-      if(xhr.readyState == 4){
+      if(xhr.readyState == 4 && xhr.status === 200){
         
           const res = JSON.parse(xhr.responseText);
         
@@ -33,9 +33,16 @@ const loadData = (username) =>{
           follUser.innerHTML = "Seguidores: " + res.followers;
           followUser.innerHTML = "Seguindo: " + res.following;
           input.value = '';
-            
-          console.log([nameUser, bioUser, imgUser, follUser]);
-
+      
+          }else{
+            imgUser.style.display = 'none';
+            nameUser.innerHTML = "Usuário não encontrado  :(";
+            bioUser.innerHTML = "Informe um usuário existente!";
+            imgUser.src = '';
+            locUser.innerHTML = '';
+            follUser.innerHTML = '';
+            followUser.innerHTML = '';
+            input.value = '';
           }
        }
     }
