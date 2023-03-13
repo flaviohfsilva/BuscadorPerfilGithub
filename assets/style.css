@@ -160,27 +160,44 @@ a:hover{
 /* ======================= RESPONSIVE =======================*/
 @media screen and (max-width: 900px){
 
+  
     .header{
-        margin-left: 8%;
+        margin-left: 70px;
     }
 
     .title{
-        margin-left: 8%;
+        margin-left: 70px;
     }
 
     form{
-        margin-left: 8%;
+        margin-left: 70px;
     }
 
-    .user-img{
-        width: 50%;
-    }
-
-   footer{
-    margin-left: 5%;
+    footer{
+    margin-left: 70px;
    }
 
    .contact{
     width: 120px;
+   }
+
+   .user-img{
+    width: 50%;
+    margin-left: 50px;
+   }
+   .user-name{
+      margin-left: 50px; 
+   }
+   .user-data{
+      margin-left: 50px;
+   }
+   .user-location{
+      margin-left: 50px;
+   }
+   .user-followers{
+      margin-left: 50px;
+   }
+   .user-follow{
+      margin-left: 50px;
    }
 }
